@@ -1,0 +1,32 @@
+{
+	"name": "Praktikum WAD",
+	"build": {
+    	"dockerfile": "Dockerfile"
+  	},
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"customizations": {
+		"vscode": {
+			"settings": {},
+			"extensions": [
+				"ecmel.vscode-html-css",
+				"bmewburn.vscode-intelephense-client",
+				"dbaeumer.vscode-eslint",
+				"xdebug.php-debug",
+				"dsznajder.es7-react-js-snippets"
+			]
+		}
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {}
+	},
+
+	"postCreateCommand": "bash server-start.sh",
+	"postStartCommand": "bash server-start.sh",
+	"forwardPorts": [80],
+	"portsAttributes": {
+		"80": {
+			"label": "View the webpage",
+			"onAutoForward": "notify"
+		}
+	}
+}

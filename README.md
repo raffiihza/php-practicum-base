@@ -1,1 +1,1 @@
-# php-practicum-base
+# php-practicum-template
