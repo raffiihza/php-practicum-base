@@ -43,7 +43,7 @@ Selamat mengerjakan!
 
 ### Menyambungkan database dengan source code modul
 1. Masukkan kredensial database Aiven ke file .env/config.php/connect.php/ file terkait, database name sesuaikan dengan modul
-2. Buka HeidiSQL, masuk ke database Aiven, buka database modul terkait, buka tab Query, import SQL/copy isi dari file .sql yang diberikan, dan tekan tombol execute SQL
+2. Buka HeidiSQL, masuk ke database Aiven, buka database modul terkait, buka tab Query, copy isi dari file .sql yang diberikan, dan tekan tombol execute SQL
 3. Database akan berhasil tersambung
 
 ### Menyiapkan aplikasi Laravel
@@ -92,5 +92,5 @@ Selamat mengerjakan!
 
 ---
 
-**Q: Import SQL file ke Aiven gagal (primary key error)**
+**Q: Import SQL file ke Aiven gagal (primary key error)**  
 **A:** Step modul 0 terlewati, Masuk ke web dashboard Aiven > pilih database MySQL yang dibuat > service setting > scroll ke bawah > Advanced > tombol Configure > disable `mysql.sql_require_primary_key`
