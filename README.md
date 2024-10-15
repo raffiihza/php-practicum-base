@@ -5,7 +5,7 @@ Selamat mengerjakan!
 ## Pengingat
 1. Segala perubahan di codespaces akan otomatis tersimpan (tidak perlu save atau CTRL+S). Namun saat praktikum berakhir, praktikan wajib melakukan commit agar perubahan code dapat masuk ke repo dan dilihat oleh asisten praktikum.
 2. Segala perubahan code dilakukan di codespaces lalu commit, jangan diubah di repo github-nya langsung agar tidak terjadi error/conflict.
-3. Jika ada error pada codespace, database, atau HeidiSQL, bisa cek pada FAQ di bawah atau tanyakan ke asisten praktikum yang bertugas.
+3. Jika ada error pada codespace, database, atau DBeaver, bisa cek pada FAQ di bawah atau tanyakan ke asisten praktikum yang bertugas.
 
 ## Cara Penggunaan Codespaces
 
@@ -43,8 +43,11 @@ Selamat mengerjakan!
 
 ### Menyambungkan database dengan source code modul
 1. Masukkan kredensial database Aiven ke file .env/config.php/connect.php/ file terkait, database name sesuaikan dengan modul
-2. Buka HeidiSQL, masuk ke database Aiven, buka database modul terkait, buka tab Query, copy isi dari file .sql yang diberikan, dan tekan tombol execute SQL
-3. Database akan berhasil tersambung
+
+### Meng-import file SQL ke database Aiven
+1. Buka DBeaver, masuk ke database Aiven, klik kanan database modul yang terkait, buka tools, tekan execute script, pilih file SQL yang diberikan, dan tekan start
+2. Jika sudah finish, tutup window import script
+3. Lakukan refresh dengan menekan F5 atau ribbon File > Refresh
 
 ### Menyiapkan aplikasi Laravel
 1. Upload semua file dan folder proyek Laravel ke folder modul 5
@@ -73,7 +76,7 @@ Selamat mengerjakan!
 1. Pastikan bukan error dari code yang dibuat
 2. Tidak adanya `index.html` atau `index.php`
 3. Tidak ada database yang terkoneksi, cek file .env/config.php/connect.php/file terkait
-4. Jika database benar, cek apakah ada SQL file yang perlu di-import lewat HeidiSQL
+4. Jika database benar, cek apakah ada SQL file yang perlu di-import lewat DBeaver
 
 ---
 
@@ -81,11 +84,11 @@ Selamat mengerjakan!
 **A:** Kemungkinan masalahnya adalah:
 1. Cek kredensial koneksi (host, user, pass, port, dbname)
 2. Tidak ada database yang terkoneksi, cek file .env/config.php/connect.php/file terkait
-3. Jika database benar, cek apakah ada SQL file yang perlu di-import lewat HeidiSQL
+3. Jika database benar, cek apakah ada SQL file yang perlu di-import lewat DBeaver
 
 ---
 
-**Q: Database tidak bisa connect di HeidiSQL**  
+**Q: Database tidak bisa connect di DBeaver**  
 **A:** Kemungkinan masalahnya adalah:
 1. Cek kredensial koneksi (host, user, pass, port, dbname)
 2. Jika database benar, kemungkinan besar database Aiven terblokir di jaringan Telkom University, gunakan hotspot pribadi
