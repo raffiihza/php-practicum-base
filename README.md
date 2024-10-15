@@ -6,6 +6,7 @@ Selamat mengerjakan!
 1. Segala perubahan di codespaces akan otomatis tersimpan (tidak perlu save atau CTRL+S). Namun saat praktikum berakhir, praktikan wajib melakukan commit agar perubahan code dapat masuk ke repo dan dilihat oleh asisten praktikum.
 2. Segala perubahan code dilakukan di codespaces lalu commit, jangan diubah di repo github-nya langsung agar tidak terjadi error/conflict.
 3. Jika ada error pada codespace, database, atau DBeaver, bisa cek pada FAQ di bawah atau tanyakan ke asisten praktikum yang bertugas.
+4. Jangan melakukan pekerjaan lain di repo github ini dan codespaces di luar praktikum dan/atau di luar intruksi asisten praktikum.
 
 ## Cara Penggunaan Codespaces
 
@@ -71,6 +72,11 @@ Selamat mengerjakan!
 
 ---
 
+**Q: Tidak bisa melihat webpage hasil pengerjaan di web browser**  
+**A:** Jalankan kembali command `bash server-start.sh` lalu tunggu beberapa saat dan buka kembali webpage hasil pengerjaan dengan menekan tombol ikon globe pada port 80
+
+---
+
 **Q: Webpage untuk modul tertentu error**  
 **A:** Kemungkinan masalahnya adalah:
 1. Pastikan bukan error dari code yang dibuat
@@ -92,6 +98,16 @@ Selamat mengerjakan!
 **A:** Kemungkinan masalahnya adalah:
 1. Cek pertanyaan FAQ sebelumnya dan pastikan semuanya benar
 2. Jika database benar, kemungkinan besar database Aiven terblokir di jaringan Telkom University, gunakan hotspot pribadi
+
+---
+
+**Q: Webpage bagian modul 5 Laravel error**  
+**A:** Kemungkinan masalahnya adalah:
+1. Cek FAQ bagian database dan pastikan tidak ada error terlebih dahulu
+2. Jika dependencies Laravel belum ter-install, ketik command `composer install` di direktori modul 5
+3. Jika error terkait key, generate key dengan command `php artisan key:generate` di direktori modul 5
+4. Jika error terkait database yang belum ter-import, ketik command `php artisan migrate` di direktori modul 5
+5. Untuk error lainnya, bisa ditanyakan ke asisten praktikum
 
 ---
 
