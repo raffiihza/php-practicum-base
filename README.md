@@ -11,7 +11,7 @@ Selamat mengerjakan!
 
 ### Memasuki codespace untuk memulai coding (lewati jika sudah masuk codespace)
 1. Buka repo github praktikum masing-masing
-2. Tekan tombol Code di atas kanan, dan pencet nama codespace yang aktif (yang namanya acak)
+2. Tekan tombol Code di atas kanan, buka tab Codespaces, dan tekan nama codespace yang dibuat sebelumnya (yang namanya acak). Jika belum ada, bisa buat codespace pada repo tersebut terlebih dahulu (building awal dapat memakan waktu 2-5 menit)
 3. Tunggu booting codespaces hingga selesai
 4. Jika sudah selesai, tutup tab codespaces, masuk ke repo github praktikum masing-masing, tekan tombol Code > tekan menu titik tiga di sebelah kanan nama codespace > tekan Stop Codespace (Jangan melakukan delete codespace kecuali ada instruksi dari asisten praktikum)
 
@@ -75,22 +75,22 @@ Selamat mengerjakan!
 **A:** Kemungkinan masalahnya adalah:
 1. Pastikan bukan error dari code yang dibuat
 2. Tidak adanya `index.html` atau `index.php`
-3. Tidak ada database yang terkoneksi, cek file .env/config.php/connect.php/file terkait
-4. Jika database benar, cek apakah ada SQL file yang perlu di-import lewat DBeaver
+3. Error pada database bisa dilihat pada pertanyaan FAQ selanjutnya
 
 ---
 
 **Q: Database tidak bisa connect di code**  
 **A:** Kemungkinan masalahnya adalah:
-1. Cek kredensial koneksi (host, user, pass, port, dbname)
-2. Tidak ada database yang terkoneksi, cek file .env/config.php/connect.php/file terkait
-3. Jika database benar, cek apakah ada SQL file yang perlu di-import lewat DBeaver
+1. Cek di website Aiven apakah instance MySQL masih running atau tidak. Jika mati, silahkan turn on instance tersebut. Database free tier di Aiven kadang dimatikan secara otomatis ketika tidak digunakan dalam waktu yang lama (kurang lebih 2 minggu)
+2. Cek kredensial koneksi (host, user, pass, port, dbname)
+3. Tidak ada database yang terkoneksi di code, cek file .env/config.php/connect.php/file terkait
+4. Jika database benar, cek apakah ada SQL file yang perlu di-import lewat DBeaver yang belum dilakukan
 
 ---
 
 **Q: Database tidak bisa connect di DBeaver**  
 **A:** Kemungkinan masalahnya adalah:
-1. Cek kredensial koneksi (host, user, pass, port, dbname)
+1. Cek pertanyaan FAQ sebelumnya dan pastikan semuanya benar
 2. Jika database benar, kemungkinan besar database Aiven terblokir di jaringan Telkom University, gunakan hotspot pribadi
 
 ---
