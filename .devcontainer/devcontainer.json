@@ -20,16 +20,13 @@
 	"forwardPorts": [80,3306,3000],
 	"portsAttributes": {
 		"80": {
-			"label": "Apache",
-			"onAutoForward": "notify"
+			"label": "Apache"
 		},
 		"3306": {
-			"label": "MySQL",
-			"onAutoForward": "notify"
+			"label": "MySQL"
 		},
 		"3000": {
-			"label": "PHPMyAdmin",
-			"onAutoForward": "notify"
+			"label": "PHPMyAdmin"
 		}	
 	}
 }
