@@ -24,5 +24,6 @@ sudo bash -c "cat <<EOF > /etc/apache2/sites-available/000-default.conf
     CustomLog \${APACHE_LOG_DIR}/mydomain-access.log combined
 </VirtualHost>
 EOF"
+sudo chmod 755 phpmyadmin/config.inc.php > /dev/null 2>&1
 sudo apache2ctl start > /dev/null 2>&1
 echo "Web server is running, run 'bash server-stop.sh' to stop"
