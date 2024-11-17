@@ -13,23 +13,19 @@
 		}
 	},
 	"features": {
-		"ghcr.io/devcontainers/features/node:1": {}
+		"ghcr.io/devcontainers/features/node:1": {},
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
 	},
 
-	"postStartCommand": "php -S localhost:5000 & bash server-start.sh &",
-	"forwardPorts": [80,3306,3000],
+	"forwardPorts": [3306,3000],
 	"portsAttributes": {
-		"80": {
-			"label": "Apache",
-			"onAutoForward": "notify"
-		},
 		"3306": {
 			"label": "MySQL",
 			"onAutoForward": "notify"
 		},
 		"3000": {
-			"label": "PHPMyAdmin",
+			"label": "Apache",
 			"onAutoForward": "notify"
-		}	
+		}
 	}
 }

@@ -37,6 +37,9 @@ services:
     restart: always
     ports:
       - 3000:80
+    volumes:
+      - ..:/var/www/local
+      - ../apache-config-phpmyadmin.conf:/etc/apache2/sites-available/000-default.conf
     environment:
       PMA_HOST: db
       PMA_USER: root
