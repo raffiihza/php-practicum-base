@@ -36,10 +36,10 @@ services:
     image: phpmyadmin:5.2.1
     restart: always
     ports:
-      - 80:80
+      - 8080:80
     volumes:
       - ..:/var/www/local
-      - ../apache-config-phpmyadmin.conf:/etc/apache2/sites-available/000-default.conf
+      - ./apache-config-phpmyadmin.conf:/etc/apache2/sites-available/000-default.conf
     environment:
       PMA_HOST: db
       PMA_USER: root

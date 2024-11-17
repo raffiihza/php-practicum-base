@@ -22,7 +22,7 @@
 			"label": "MySQL",
 			"onAutoForward": "notify"
 		},
-		"3000": {
+		"8080": {
 			"label": "Apache",
 			"onAutoForward": "notify"
 		}
