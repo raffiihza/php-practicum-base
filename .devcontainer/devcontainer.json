@@ -16,17 +16,20 @@
 		"ghcr.io/devcontainers/features/node:1": {}
 	},
 
-	"postStartCommand": "bash server-start.sh &",
+	"postStartCommand": "php -S localhost:5000 & bash server-start.sh &",
 	"forwardPorts": [80,3306,3000],
 	"portsAttributes": {
 		"80": {
-			"label": "Apache"
+			"label": "Apache",
+			"onAutoForward": "notify"
 		},
 		"3306": {
-			"label": "MySQL"
+			"label": "MySQL",
+			"onAutoForward": "notify"
 		},
 		"3000": {
-			"label": "PHPMyAdmin"
+			"label": "PHPMyAdmin",
+			"onAutoForward": "notify"
 		}	
 	}
 }
