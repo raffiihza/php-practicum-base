@@ -27,7 +27,7 @@
             <a href="modul2/" class="btn btn-primary btn-lg">Modul 2</a>
             <a href="modul3/" class="btn btn-primary btn-lg">Modul 3</a>
             <a href="modul4/" class="btn btn-primary btn-lg">Modul 4</a>
-            <a href="modul5/public" class="btn btn-primary btn-lg">Modul 5</a>
+            <a href="modul5/public/" class="btn btn-primary btn-lg">Modul 5</a>
         </div>
     </div>
 
