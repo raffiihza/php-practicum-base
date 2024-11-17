@@ -16,7 +16,7 @@
 		"ghcr.io/devcontainers/features/node:1": {}
 	},
 
-	"forwardPorts": [80,3306,8080],
+	"forwardPorts": [80,3306],
 	"portsAttributes": {
 		"80": {
 			"label": "Apache Web Server",
@@ -25,7 +25,7 @@
 		"3306": {
 			"label": "MySQL",
 			"onAutoForward": "notify"
-		},
+		}
 		// "8080": {
 		// 	"label": "PHPMyAdmin",
 		// 	"onAutoForward": "notify"
