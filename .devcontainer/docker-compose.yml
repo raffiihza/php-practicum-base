@@ -32,15 +32,15 @@ services:
     # Add "forwardPorts": ["3306"] to **devcontainer.json** to forward MariaDB locally.
     # (Adding the "ports" property to this file will not forward from a Codespace.)
 
-  phpmyadmin:
-    image: phpmyadmin:5.2.1
-    restart: always
-    ports:
-      - 8080:80
-    environment:
-      - PMA_ARBITRARY=1
-    depends_on:
-      - db
+  # phpmyadmin:
+  #   image: phpmyadmin:5.2.1
+  #   restart: always
+  #   ports:
+  #     - 8080:80
+  #   environment:
+  #     - PMA_ARBITRARY=1
+  #   depends_on:
+  #     - db
   
 volumes:
   mariadb-data:

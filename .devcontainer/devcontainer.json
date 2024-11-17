@@ -26,9 +26,9 @@
 			"label": "MySQL",
 			"onAutoForward": "notify"
 		},
-		"8080": {
-			"label": "PHPMyAdmin",
-			"onAutoForward": "notify"
-		}
+		// "8080": {
+		// 	"label": "PHPMyAdmin",
+		// 	"onAutoForward": "notify"
+		// }
 	}
 }
