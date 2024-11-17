@@ -20,8 +20,6 @@
 		"ghcr.io/devcontainers/features/node:1": {}
 	},
 
-	"postCreateCommand": "bash server-start.sh",
-	"postStartCommand": "bash server-start.sh",
 	"forwardPorts": [80],
 	"portsAttributes": {
 		"80": {
