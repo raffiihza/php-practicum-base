@@ -36,7 +36,7 @@ services:
     image: phpmyadmin:5.2.1
     restart: always
     ports:
-      - 3000:80
+      - 80:80
     volumes:
       - ..:/var/www/local
       - ../apache-config-phpmyadmin.conf:/etc/apache2/sites-available/000-default.conf
