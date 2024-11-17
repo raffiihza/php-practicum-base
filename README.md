@@ -31,8 +31,8 @@ Selamat mengerjakan!
 6. Jika halaman baru tertutup, tinggal buka tab Ports lagi dan tekan tombol globe/browser di port `80` lagi tanpa perlu mengulang membuka terminal
 
 ### Mengelola database menggunakan PHPMyAdmin
-1. Pastikan web server Apache pada langkah sebelumnya telah dilaksanakan
-2. Buka tab Ports sebelah kanan tab Terminal, lalu letakkan mouse di atas port `8080`, tekan tombol ikon globe/browser pada port `8080` tersebut, dan halaman baru akan terbuka
+1. Pastikan web server Apache pada langkah sebelumnya telah dilaksanakan dan membuka webpage dari port `80`
+2. Tekan tombol PHPMyAdmin pada dashboard index
 3. Tunggu hingga loading selesai (sampai keluar halaman atau keluar error)
 4. Jika tidak ada error terjadi, maka akan disuguhi halaman login PHPMyAdmin jika masih pertama kali membukanya setelah building codespace
 5. `Lewati step ini jika ingin menggunakan database MySQL lokal codespace.` Jika ingin menggunakan database eksternal seperti Aiven atau layanan lainnya, isikan server host, username, dan password dari yang tertera pada website dashboard Aiven
