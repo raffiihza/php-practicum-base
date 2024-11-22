@@ -82,7 +82,7 @@ Selamat mengerjakan!
 ---
 
 **Q: Tidak bisa melihat webpage hasil pengerjaan di web browser, error 401 atau 502**  
-**A:** Jalankan kembali command `bash server-start.sh` lalu tunggu beberapa saat dan buka kembali webpage hasil pengerjaan dengan menekan tombol ikon globe pada port `80`
+**A:** Jalankan kembali command `bash server-start.sh` lalu tunggu beberapa saat dan buka kembali webpage hasil pengerjaan dengan menekan tombol ikon globe pada port `80`. Jika masih tidak bisa, pada tab Ports hapus port `80` lalu tekan tombol Add Port dan tambahkan lagi port `80`.
 
 ---
 
