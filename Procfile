@@ -1,1 +1,1 @@
-web: bash -c "if [ -d modul5 ] && [ -f modul5/composer.json ]; then cd modul5 && composer install && npm install && npm run build && cd ..; fi; heroku-php-apache2"
+web: bash -c "if [ -d modul5 ] && [ -f modul5/composer.json ]; then cd modul5 && composer install && cd ..; fi; heroku-php-apache2"
